@@ -1,0 +1,260 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PlayDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PlayDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PlayDemo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PlayDemo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PLAYDEMO_DIALOG DIALOGEX 0, 0, 686, 489
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_APPWINDOW
+CAPTION "StreamPlayer"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "IP addr:",IDC_STATIC,104,17,33,11
+    EDITTEXT        IDC_EDIT_IP,147,14,75,15,ES_AUTOHSCROLL
+    LTEXT           "Port:",IDC_STATIC,239,17,28,10
+    EDITTEXT        IDC_EDIT_PORT,282,15,75,15,ES_AUTOHSCROLL
+    LTEXT           "Username:",IDC_STATIC,365,19,36,11
+    EDITTEXT        IDC_EDIT_USERNAME,409,15,75,15,ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_STATIC,104,35,34,10
+    EDITTEXT        IDC_EDIT_PASSWORD,147,33,75,15,ES_AUTOHSCROLL
+    LTEXT           "Channel:",IDC_STATIC,237,38,36,11
+    LTEXT           "Transtype:",IDC_STATIC,365,37,41,10
+    COMBOBOX        IDC_COMBO_CHANNEL,282,36,77,118,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TRANSTYPE,411,35,73,94,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_VIDEO1,7,96,226,163,SS_NOTIFY | SS_SUNKEN | WS_BORDER
+    LTEXT           "",IDC_STATIC_VIDEO2,254,95,226,163,SS_NOTIFY | SS_SUNKEN | WS_BORDER
+    LTEXT           "",IDC_STATIC_VIDEO3,7,277,226,163,SS_NOTIFY | SS_SUNKEN | WS_BORDER
+    LTEXT           "",IDC_STATIC_VIDEO4,365,272,226,163,SS_NOTIFY | SS_SUNKEN | WS_BORDER
+    PUSHBUTTON      "PLAY",IDC_BTN_PLAY,623,93,48,19
+    PUSHBUTTON      "STOP",IDC_BTN_STOP,623,147,48,19
+    PUSHBUTTON      "FAST",IDC_BTN_FAST,623,175,48,19
+    PUSHBUTTON      "SLOW",IDC_BTN_SLOW,623,201,48,19
+    PUSHBUTTON      "Capture",IDC_BTN_CAPTURE,623,229,48,19
+    PUSHBUTTON      "Refresh",IDC_BTN_REFRESH,623,255,48,19
+    CONTROL         "AUDIO",IDC_CHECK_AUTO,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,623,283,48,19
+    CONTROL         "Slider1",IDC_SLIDER_AUDIO,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,617,313,54,15
+    CONTROL         "Slider2",IDC_SLIDER_TIMER1,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,234,98,15,160
+    CONTROL         "Slider2",IDC_SLIDER_TIMER2,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,595,100,15,160
+    CONTROL         "Slider2",IDC_SLIDER_TIMER3,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,234,276,15,160
+    CONTROL         "Slider2",IDC_SLIDER_TIMER4,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,594,271,15,160
+    CONTROL         "Play Mode",IDC_CHECK_PLAYMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,30,50,20
+    GROUPBOX        "Stream Play",IDC_STATIC,78,3,420,51
+    GROUPBOX        "File Play",IDC_STATIC,77,56,419,34
+    EDITTEXT        IDC_EDIT_FILENAME,147,67,75,16,ES_AUTOHSCROLL
+    LTEXT           "Filename:",IDC_STATIC,103,70,34,10
+    PUSHBUTTON      "browse",IDC_BTN_FILE,237,68,29,15
+    PUSHBUTTON      "LOAD",IDC_BTN_LOAD,623,65,48,19
+    CONTROL         "PAUSE",IDC_CHECK_PAUSE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,623,121,48,19
+    PUSHBUTTON      "Start MP4",IDC_BTN_STARTRECORD,623,335,48,19
+    PUSHBUTTON      "Stop MP4",IDC_BTN_STOPRECORD,623,357,48,19
+    PUSHBUTTON      "Start ASF",IDC_BTN_STARTASFRECORD,623,381,48,19
+    PUSHBUTTON      "Stop ASF",IDC_BTN_STOPASFRECORD,623,463,48,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "PlayDemo Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "PlayDemo"
+            VALUE "LegalCopyright", "版权所有 (C) 2006"
+            VALUE "OriginalFilename", "PlayDemo.EXE"
+            VALUE "ProductName", "PlayDemo 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PLAYDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 679
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 482
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PLAYDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_CHANNEL, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_CHANNEL, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_CHANNEL, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_CHANNEL, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_TRANSTYPE, 0x403, 4, 0
+0x4455, 0x0050, 
+    IDC_COMBO_TRANSTYPE, 0x403, 10, 0
+0x554d, 0x544c, 0x4349, 0x5341, 0x0054, 
+    IDC_COMBO_TRANSTYPE, 0x403, 4, 0
+0x4354, 0x0050, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 PlayDemo(&A)..."
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PlayDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
